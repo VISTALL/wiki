@@ -106,7 +106,16 @@ sessionSecret: 1234567890abcdefghijklmnopqrstuvxyz
 # ---------------------------------------------------------------------
 # You can also use an ENV variable by using $ENV_VAR_NAME as the value
 
-db: mongodb://localhost:27017/wiki
+db:
+  uri: mongodb://localhost:27017/wiki
+  # allow basic/x509
+  auth: 'basic'
+  x509:
+    ssl: true
+    sslCert: '/usr/root/mongo-cert.pem'
+    sslKey: '/usr/root/mongo-key.pem'
+    sslCA: '/usr/root/ca.pem'
+    sslValidate: true
 
 # ---------------------------------------------------------------------
 # Git Connection Info

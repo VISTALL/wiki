@@ -53,9 +53,24 @@ module.exports = {
         self[modelName] = require(path.join(dbModelsPath, file))
       })
 
+    var options = {
+      server: {
+      },
+      useMongoClient: true
+    };
+
+    if(appconfig.db.auth == 'x509') {
+      var x509 = appconfig.db.x509
+      options.server.ssl = x509.ssl;
+      options.server.sslCert = x509.sslCert != undefined ? fs.readFileSync(x509.sslCert) : null;
+      options.server.sslKey = x509.sslKey != undefined ? fs.readFileSync(x509.sslKey) : null;
+      options.server.sslCA = x509.sslCA != undefined ? fs.readFileSync(x509.sslCA) : null;
+      options.server.sslValidate = x509.sslValidate;
+    }
+
     // Connect
 
-    self.onReady = modb.connect(appconfig.db, { useMongoClient: true })
+    self.onReady = modb.connect(appconfig.db.uri, options)
 
     return self
   }
