@@ -59,6 +59,15 @@ module.exports = {
       useMongoClient: true
     };
 
+    var uri = null;
+
+    if(typeof appconfig.db == 'string') {
+      uri = appconfig.db
+    }
+    else {
+      uri = appconfig.db.uri
+    }
+
     if(appconfig.db.auth == 'x509') {
       var x509 = appconfig.db.x509
       options.server.ssl = x509.ssl;
@@ -70,7 +79,7 @@ module.exports = {
 
     // Connect
 
-    self.onReady = modb.connect(appconfig.db.uri, options)
+    self.onReady = modb.connect(uri, options)
 
     return self
   }
