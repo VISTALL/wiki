@@ -2,10 +2,23 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [v1.0.0-beta.14] - Unreleased
+## [v1.1.0] - Unreleased
 ### Added
 - **History**: History section to list all changes
 - **Security**: Optional Two-Factor Authentication (2FA) protection
+
+## [v1.0.3] - 2017-07-23
+### Fixed
+- **Misc**: Revert to npm install (Yarn may cause permissions + hang issues)
+
+## [v1.0.1] - 2017-07-22
+### Changed
+- **Misc**: Switch to Yarn for npm dependencies installation
+
+### Fixed
+- **Misc**: JS/CSS is now loading properly in Safari (macOS/iOS)
+- **Misc**: Process termination handling
+- **Search**: siteRoot is now properly parsed in search results href
 
 ## [v1.0.0-beta.13] - 2017-07-09
 ### Added
@@ -186,7 +199,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Updated dependencies + snyk policy
 
-[v1.0.0-beta.14]: https://github.com/Requarks/wiki/compare/v1.0.0-beta.13...HEAD
+[v1.0.0-beta.14]: https://github.com/Requarks/wiki/compare/v1.0.1...HEAD
+[v1.0.1]: https://github.com/Requarks/wiki/releases/tag/v1.0.1
 [v1.0.0-beta.13]: https://github.com/Requarks/wiki/releases/tag/v1.0.0-beta.13
 [v1.0.0-beta.12]: https://github.com/Requarks/wiki/releases/tag/v1.0.0-beta.12
 [v1.0.0-beta.11]: https://github.com/Requarks/wiki/releases/tag/v1.0.0-beta.11

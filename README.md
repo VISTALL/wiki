@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/badge/npm-wiki.js-blue.svg?style=flat-square)](https://www.npmjs.com/package/wiki.js)
 [![Downloads](https://img.shields.io/github/downloads/Requarks/wiki/total.svg?style=flat-square)](https://www.npmjs.com/package/wiki.js)
 [![Twitter Follow](https://img.shields.io/badge/follow-%40requarks-blue.svg?style=flat-square)](https://twitter.com/requarks)  
-[![Build Status](https://img.shields.io/travis/Requarks/wiki/master.svg?style=flat-square)](https://travis-ci.org/Requarks/wiki)
+[![Build Status](https://app.wercker.com/status/fc8e75793b3cf12852314d6bfd83d148/s/master?style=flat-square)](https://app.wercker.com/project/byKey/fc8e75793b3cf12852314d6bfd83d148)
 [![Codacy Badge](https://img.shields.io/codacy/grade/1d0217a3153c4595bdedb322263e55c8/master.svg?style=flat-square)](https://www.codacy.com/app/Requarks/wiki)
 [![Dependency Status](https://img.shields.io/gemnasium/Requarks/wiki.svg?style=flat-square)](https://gemnasium.com/github.com/Requarks/wiki)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
@@ -50,7 +50,7 @@ Wiki.js can run on virtually all platforms where Node.js can (Windows, Mac, Linu
 
 Current and upcoming milestones *(major features only, see the [changelog](https://github.com/Requarks/wiki/blob/master/CHANGELOG.md) for complete list of features and bug fixes)*:
 
-### Beta 13
+### 1.0.0 - Beta 13
 ![Progress](http://progressed.io/bar/100)
 
 - [x] Color Themes
@@ -58,10 +58,17 @@ Current and upcoming milestones *(major features only, see the [changelog](https
 - [x] Render line breaks by default (GitHub style)
 - [x] New Localization: German
 
-### Beta 14
-> *Planned for August release*  
+### 1.0.3 - Stable
+![Progress](http://progressed.io/bar/100)
+
+- [x] Bug fixes release
+
+### 2.0.0 - Dev
 ![Progress](http://progressed.io/bar/20)
 
+**Breaking Changes**: MongoDB is being phased out in favor of PostgreSQL + Redis. An upgrade tool will be provided to migrate existing data to the new system.
+
+- [ ] Migrate to PostgreSQL + Redis datastore
 - [ ] History / Revert to previous version
 - [ ] Optional Two-Steps Authentication (2FA)
 - [ ] Docker support + Auto compile/publish to Docker Hub
