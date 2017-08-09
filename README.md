@@ -58,29 +58,37 @@ Current and upcoming milestones *(major features only, see the [changelog](https
 - [x] Render line breaks by default (GitHub style)
 - [x] New Localization: German
 
-### 1.0.3 - Stable
+### 1.0.5 - Stable
 ![Progress](http://progressed.io/bar/100)
 
 - [x] Bug fixes release
+- [x] New Localization: Dutch
 
 ### 2.0.0 - Dev
 ![Progress](http://progressed.io/bar/20)
 
 **Breaking Changes**: MongoDB is being phased out in favor of PostgreSQL + Redis. An upgrade tool will be provided to migrate existing data to the new system.
 
-- [ ] Migrate to PostgreSQL + Redis datastore
+- [ ] GraphQL API
+- [x] Migrate to PostgreSQL + Redis datastore
 - [ ] History / Revert to previous version
 - [ ] Optional Two-Steps Authentication (2FA)
 - [ ] Docker support + Auto compile/publish to Docker Hub
 - [ ] Support sub-directory installations (e.g. example.com/wiki)
 - [ ] Persist system settings to database instead of file-based
+- [ ] User Groups + Better permissions management
+- [ ] Make use of all available CPU cores, distributed jobs queue
+- [ ] Tags per document / folder
+- [ ] Comments / Discussion per document
+- [ ] Profile page per user
+- [ ] Preview changes directly from the editor, without saving
+- [x] Modular authentication providers
+- [ ] High Availability support (multiple concurrent instances)
 
 ### Future
 
-- [ ] User Groups + Better permissions management
 - [ ] Insert Link modal in Editor
 - [ ] Better simultaneous user editing handling
-- [ ] Preview changes directly from the editor, without saving
 - [ ] Upgrade from web UI
 
 ## Gitter
@@ -100,6 +108,7 @@ We are looking for translators to make Wiki.js available in multiple languages. 
 
 - [x] English
 - [x] Chinese - *Thanks to [@choicky](https://github.com/choicky)*
+- [x] Dutch - *Thanks to [@weirdwater](https://github.com/weirdwater)*
 - [x] French
 - [x] German - *Thanks to [@joetjengerdes](https://github.com/joetjengerdes)*
 - [x] Korean - *Thanks to [@junwonpk](https://github.com/junwonpk)*
